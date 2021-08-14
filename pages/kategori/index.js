@@ -62,6 +62,58 @@ const Elektronik = () => {
                         <p className="text-gray-500 text-sm ml-4">Elektronik yang lagi hits</p>
                     </div>
                     <div className="grid grid-cols-5 gap-4">
+                        <Link href="product">
+                            <div className="shadow-md rounded-lg h-80 border">
+                                <div className="flex flex-col">
+                                    <img src="/product/123.png" alt="Product 1" className="w-56 h-48 object-contain mx-auto" />
+                                    <div className="flex flex-col p-2">
+                                        <p className="font-semibold">Canon M50</p>
+                                        <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <p className="text-sm text-green-700 font-bold mt-4">Rp 15.000.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </Link>
+                        <div className="shadow-md rounded-lg h-80 border">
+                            <div className="flex flex-col">
+                                <img src="/product/960x0.jpg" alt="Product 1" className="w-56 h-48 object-contain mx-auto" />
+                                <div className="flex flex-col p-2">
+                                    <p className="font-semibold">Iphone 12</p>
+                                    <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p className="text-sm text-green-700 font-bold mt-4">Rp 15.000.000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="shadow-md rounded-lg h-80 border">
+                            <div className="flex flex-col">
+                                <img src="/product/1234.jpg" alt="Product 1" className="w-56 h-48 object-contain mx-auto" />
+                                <div className="flex flex-col p-2">
+                                    <p className="font-semibold">Lenovo Thinkpad</p>
+                                    <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p className="text-sm text-green-700 font-bold mt-4">Rp 9.000.000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="shadow-md rounded-lg h-80 border">
+                            <div className="flex flex-col">
+                                <img src="/product/R(1).jpg" alt="Product 1" className="w-56 h-48 rounded-lg object-fill mx-auto" />
+                                <div className="flex flex-col p-2">
+                                    <p className="font-semibold">Masker medis</p>
+                                    <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p className="text-sm text-green-700 font-bold mt-4">Rp 20.000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="shadow-md rounded-lg h-80 border">
+                            <div className="flex flex-col">
+                                <img src="/product/123.png" alt="Product 1" className="w-56 h-48 object-contain mx-auto" />
+                                <div className="flex flex-col p-2">
+                                    <p className="font-semibold">Canon M50</p>
+                                    <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p className="text-sm text-green-700 font-bold mt-4">Rp 15.000.000</p>
+                                </div>
+                            </div>
+                        </div>
                         <div className="shadow-md rounded-lg h-80 border">
                             <div className="flex flex-col">
                                 <img src="/product/123.png" alt="Product 1" className="w-56 h-48 object-contain mx-auto" />

@@ -19,11 +19,11 @@ const Nav = ({showModal}) => {
                         </button>
                     </div>
                     <div className="flex w-1/5 justify-end">
-                        <button type="button">
-                            <FaShoppingCart className="text-3xl" />
+                        <button type="button" className="mr-4">
+                            <FaShoppingCart className="text-3xl text-green-200" />
                         </button>
                         <button type="button" className="text-white border border-white rounded-lg hover:bg-green-300 hover:border-green-500 font-semibold py-2 px-4 mx-4" onClick={showModal}>Login</button>
-                        <button type="button" className="bg-blue-500 border hover:border-white hover:bg-green-500 text-white font-semibold rounded-lg py-2 px-4">
+                        <button type="button" className="bg-green-300 border hover:bg-green-500 text-white font-semibold rounded-lg py-2 px-4">
                             <Link href="/daftar"><a>Daftar</a></Link>
                         </button>
                     </div>
