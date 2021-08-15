@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
         <div>
-            <footer className="mt-8 bg-gray-100 w-full px-2 md:px-36 lg:px-72">
-                <div className="grid grid-cols-4 gap-6 px-24 pt-10 pb-20">
+            <footer className="mt-20 bg-gray-50 w-full px-2 md:px-36 lg:px-72">
+                <div className="grid grid-cols-4 gap-6 px-24 pt-16 pb-20">
                     <div className="flex flex-col">
                         <p className="font-semibold text-gray-700">Tokopaedi</p>
                         <div className="flex flex-col text-sm mt-4">
