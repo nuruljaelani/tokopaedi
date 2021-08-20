@@ -1,8 +1,6 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable linebreak-style */
 /* eslint-disable react/button-has-type */
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable linebreak-style */
-/* eslint-disable react/prop-types */
 import { FaCircle, FaMapMarkerAlt, FaTimes } from 'react-icons/fa';
 
 const Kurir = ({ show, toggleModal }) => (
@@ -52,9 +50,9 @@ const Kurir = ({ show, toggleModal }) => (
                       <p className="text-gray-600 font-semibold">Next day</p>
                       <div className="flex flex-col">
                         <div className="mt-2 flex items-center">
-                          <FaCircle className="text-gray-500 text-xs" />
-                          <div className="flex justify-between w-full ml-2 text-gray-500">
-                            <p>Sicepat</p>
+                          <FaCircle className="text-gray-500" style={{ fontSize: '8px' }} />
+                          <div className="flex justify-between text-sm w-full ml-2 text-gray-500">
+                            <p className="font-semibold">Sicepat</p>
                             <p>Rp 10.000</p>
                           </div>
                         </div>
@@ -63,9 +61,9 @@ const Kurir = ({ show, toggleModal }) => (
 
                       <div className="flex flex-col">
                         <div className="mt-2 flex items-center">
-                          <FaCircle className="text-gray-500 text-xs" />
-                          <div className="flex justify-between w-full ml-2 text-gray-500">
-                            <p>AnterAja</p>
+                          <FaCircle className="text-gray-500 text-xs" style={{ fontSize: '8px' }} />
+                          <div className="flex justify-between text-sm w-full ml-2 text-gray-500">
+                            <p className="font-semibold">AnterAja</p>
                             <p>Rp 10.000</p>
                           </div>
                         </div>
@@ -74,9 +72,9 @@ const Kurir = ({ show, toggleModal }) => (
 
                       <div className="flex flex-col">
                         <div className="mt-2 flex items-center">
-                          <FaCircle className="text-gray-500 text-xs" />
-                          <div className="flex justify-between w-full ml-2 text-gray-500">
-                            <p>JNE</p>
+                          <FaCircle className="text-gray-500 text-xs" style={{ fontSize: '8px' }} />
+                          <div className="flex justify-between text-sm w-full ml-2 text-gray-500">
+                            <p className="font-semibold">JNE</p>
                             <p>Rp 10.000</p>
                           </div>
                         </div>
@@ -88,9 +86,9 @@ const Kurir = ({ show, toggleModal }) => (
                       <p className="text-gray-600 font-semibold">Reguler</p>
                       <div className="flex flex-col">
                         <div className="mt-2 flex items-center">
-                          <FaCircle className="text-gray-500 text-xs" />
-                          <div className="flex justify-between w-full ml-2 text-gray-500">
-                            <p>Sicepat Reg</p>
+                          <FaCircle className="text-gray-500 text-xs" style={{ fontSize: '8px' }} />
+                          <div className="flex justify-between text-sm w-full ml-2 text-gray-500">
+                            <p className="font-semibold">Sicepat Reg</p>
                             <p>Rp 10.000</p>
                           </div>
                         </div>
@@ -99,9 +97,9 @@ const Kurir = ({ show, toggleModal }) => (
 
                       <div className="flex flex-col">
                         <div className="mt-2 flex items-center">
-                          <FaCircle className="text-gray-500 text-xs" />
-                          <div className="flex justify-between w-full ml-2 text-gray-500">
-                            <p>AnterAja</p>
+                          <FaCircle className="text-gray-500 text-xs" style={{ fontSize: '8px' }} />
+                          <div className="flex justify-between text-sm w-full ml-2 text-gray-500">
+                            <p className="font-semibold">AnterAja</p>
                             <p>Rp 10.000</p>
                           </div>
                         </div>
@@ -110,9 +108,9 @@ const Kurir = ({ show, toggleModal }) => (
 
                       <div className="flex flex-col">
                         <div className="mt-2 flex items-center">
-                          <FaCircle className="text-gray-500 text-xs" />
-                          <div className="flex justify-between w-full ml-2 text-gray-500">
-                            <p>JNE</p>
+                          <FaCircle className="text-gray-500 text-xs" style={{ fontSize: '8px' }} />
+                          <div className="flex justify-between text-sm w-full ml-2 text-gray-500">
+                            <p className="font-semibold">JNE</p>
                             <p>Rp 10.000</p>
                           </div>
                         </div>
