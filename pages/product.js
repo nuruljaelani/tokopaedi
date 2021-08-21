@@ -25,22 +25,27 @@ import Kurir from '../components/product/Kurir';
 
 const Product = () => {
   const [catatan, setCatatan] = useState(false);
-  const [modal, setModal] = useState(false);
+  const [modalLogin, setModalLogin] = useState(false);
+  const [modalKurir, setModalKurir] = useState(false);
 
   const toggleCatatan = () => {
     setCatatan(!catatan);
   };
 
-  const toggleModal = () => {
-    setModal(!modal);
+  const toggleModalLogin = () => {
+    setModalLogin(!modalLogin);
+  };
+
+  const toggleModalKurir = () => {
+    setModalKurir(!modalKurir);
   };
 
   return (
     <div>
-      <Login />
-      <Nav />
-      <Kurir show={modal} toggleModal={toggleModal} />
-      <main>
+      <Login show={modalLogin} toglleModal={toggleModalLogin} />
+      <Nav showModal={toggleModalLogin} />
+      <Kurir show={modalKurir} toglleModal={toggleModalKurir} />
+      <main className="mt-28">
         <div className="my-10 flex flex-col px-2 md:px-36 lg:px-72">
           <div className="flex">
             <div className="flex flex-col w-4/12">
@@ -237,7 +242,7 @@ const Product = () => {
                 </div>
                 <div className="flex justify-between mt-2 text-sm">
                   <p className="text-gray-600 ml-8">Kurir lainya :</p>
-                  <button type="button" onClick={toggleModal} className="text-green-500 font-semibold">Lihat pilihan kurir</button>
+                  <button type="button" onClick={toggleModalKurir} className="text-green-500 font-semibold">Lihat pilihan kurir</button>
                 </div>
               </div>
               <hr />
@@ -260,7 +265,8 @@ const Product = () => {
               <hr />
             </div>
 
-            <div className="bg-white shadow border ml-6 w-3/12 rounded-lg h-92">
+            {/* Right Content */}
+            <div className="bg-white shadow border ml-6 w-2/12 rounded-lg h-92 fixed right-64 top-32">
               <div className="flex flex-col p-4">
                 <p className="text-gray-700 font-bold">Atur jumlah dan catatan</p>
                 <div className="flex mt-3 items-center">

@@ -1,14 +1,14 @@
+/* eslint-disable linebreak-style */
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 
-
 // import Swiper core and required modules
 import SwiperCore, {
   Navigation,
   Autoplay,
-  Pagination
+  Pagination,
 } from 'swiper/core';
 
 // install Swiper modules
@@ -16,21 +16,21 @@ SwiperCore.use([Navigation, Autoplay, Pagination]);
 
 // Now you can use Swiper
 
-
 export default function HomeSlider() {
-  
   return (
     <>
-      <Swiper navigation={true} className="mySwiper"
-        centeredSlides={true}
+      <Swiper
+        navigation
+        className="mySwiper"
+        centeredSlides
         autoplay={{
-          "delay": 2500,
-          "disableOnInteraction": false
+          delay: 2500,
+          disableOnInteraction: false,
         }}
         pagination={{
-          "clickable": true
+          clickable: true,
         }}
-        >
+      >
         <SwiperSlide>
           <img src="/banner-e-commerce11.png" alt="me" className="w-full rounded-lg h-80 object-center" />
         </SwiperSlide>
@@ -42,5 +42,5 @@ export default function HomeSlider() {
         </SwiperSlide>
       </Swiper>
     </>
-  )
+  );
 }

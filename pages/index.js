@@ -10,15 +10,15 @@ import Footer from '../components/Footer';
 export default function Home() {
   const [show, setShow] = useState(false);
 
-  const showModal = () => {
+  const toglleModal = () => {
     setShow(!show);
   };
 
   return (
     <div>
-      <Login show={show} closeModal={showModal} />
-      <Nav showModal={showModal} />
-      <main className="px-20">
+      <Login show={show} toglleModal={toglleModal} />
+      <Nav showModal={toglleModal} />
+      <main className="px-20 mt-24">
         <div className="px-4 md:px-36 lg:px-72 my-2">
           <HomeSlider />
         </div>

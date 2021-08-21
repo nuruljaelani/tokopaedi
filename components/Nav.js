@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Nav = ({ showModal }) => (
   <div>
-    <div className="bg-green-500">
+    <div className="bg-green-500 fixed top-0 w-full z-30">
       <nav className="w-full flex items-center mx-auto px-20 py-6">
         <div className="flex w-1/5 items-center justify-between pr-6">
           <Link href="/">
