@@ -45,8 +45,8 @@ const Product = () => {
       <Login show={modalLogin} toglleModal={toggleModalLogin} />
       <Nav showModal={toggleModalLogin} />
       <Kurir show={modalKurir} toglleModal={toggleModalKurir} />
-      <main className="mt-28">
-        <div className="my-10 flex flex-col px-2 md:px-36 lg:px-72">
+      <main className="mt-28 px-2 md:px-36 lg:px-76">
+        <div className="my-10 flex flex-col">
           <div className="flex">
             <div className="flex flex-col w-4/12">
               <div className="flex flex-col">

@@ -18,11 +18,11 @@ export default function Home() {
     <div>
       <Login show={show} toglleModal={toglleModal} />
       <Nav showModal={toglleModal} />
-      <main className="px-20 mt-24">
-        <div className="px-4 md:px-36 lg:px-72 my-2">
+      <main className="px-4 md:px-20 lg:px-76 mt-24">
+        <div className="my-2">
           <HomeSlider />
         </div>
-        <div className="my-6 flex flex-col px-2 md:px-36 lg:px-72">
+        <div className="my-6 flex flex-col">
           <div className="bg-white flex flex-col w-full border rounded-lg shadow-lg p-4">
             <div className="flex">
               <div className="w-1/2 flex flex-col">
@@ -89,7 +89,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="my-6 flex flex-col px-2 md:px-36 lg:px-72">
+        <div className="my-6 flex flex-col">
           <div className="flex justify-between mb-4">
             <p className="font-bold text-gray-800 text-2xl">Flash Sale</p>
             <p className="font-semibold text-green-500 text-lg">Lihat Semua</p>
@@ -97,7 +97,7 @@ export default function Home() {
           <div className="bg-gray-200 rounded-lg h-96" />
         </div>
 
-        <div className="my-6 flex flex-col px-2 md:px-36 lg:px-72">
+        <div className="my-6 flex flex-col">
           <div className="flex justify-between mb-4">
             <p className="font-bold text-gray-800 text-2xl">Produk Terlaris</p>
             <p className="font-semibold text-green-500 text-lg">Lihat Semua</p>
@@ -158,10 +158,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="my-6 flex flex-col px-2 md:px-36 lg:px-72">
+        <div className="my-6 flex flex-col">
           <div className="flex justify-between mb-4">
             <p className="font-bold text-gray-800 text-2xl">Official Store</p>
-            <p className="font-semibold text-green-500 text-lg">Lihat Semua</p>
+            <Link href="/official-store">
+              <a className="font-semibold text-green-500 text-lg">Lihat Semua</a>
+            </Link>
           </div>
           <div className="grid grid-cols-3 gap-4">
             <div className="bg-gray-200 rounded-lg h-56" />
@@ -170,7 +172,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="my-6 flex flex-col px-2 md:px-36 lg:px-72">
+        <div className="my-6 flex flex-col">
           <div className="flex justify-between mb-4">
             <p className="font-bold text-gray-800 text-2xl">Cari Kategori</p>
             <p className="font-semibold text-green-500 text-lg">Lihat Semua</p>
