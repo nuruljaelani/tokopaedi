@@ -14,7 +14,7 @@ const OficialStore = () => {
     <div>
       <Login modal={modal} setModal={toggleModalLogin} />
       <Nav toggleModal={toggleModalLogin} />
-      <main className="mt-28 px-4 md:px-36 lg:px-76">
+      <main className="mt-28 px-4 md:px-32 lg:px-80">
         <div className="my-2">
           <OfficialStoreSlider />
         </div>

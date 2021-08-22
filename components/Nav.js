@@ -28,9 +28,11 @@ const Nav = ({ toggleModal }) => {
               <FaShoppingCart className="text-3xl text-green-200" />
             </button>
             <button type="button" className="text-white border border-white rounded-lg hover:bg-green-300 hover:border-green-500 font-semibold py-2 px-4 mx-4" onClick={toggleModal}>Login</button>
-            <button type="button" className="bg-green-300 border hover:bg-green-500 text-white font-semibold rounded-lg py-2 px-4">
-              <Link href="/daftar"><a>Daftar</a></Link>
-            </button>
+            <Link href="/daftar">
+              <button type="button" className="bg-green-300 border hover:bg-green-500 text-white font-semibold rounded-lg py-2 px-4">
+                <a>Daftar</a>
+              </button>
+            </Link>
           </div>
         </nav>
       </div>

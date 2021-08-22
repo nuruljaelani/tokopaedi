@@ -42,7 +42,7 @@ const Product = () => {
       <Login modal={modal} setModal={toggleModalLogin} />
       <Nav toggleModal={toggleModalLogin} />
       <Kurir show={modalKurir} toggleModal={toggleModalKurir} />
-      <main className="mt-28 px-2 md:px-36 lg:px-76">
+      <main className="mt-28 px-2 md:px-32 lg:px-80">
         <div className="my-10 flex flex-col">
           <div className="flex">
             <div className="flex flex-col w-4/12">
@@ -263,7 +263,7 @@ const Product = () => {
             </div>
 
             {/* Right Content */}
-            <div className="bg-white shadow border ml-6 w-2/12 rounded-lg h-92 fixed right-64 top-32">
+            <div className="bg-white shadow border ml-6 w-2/12 rounded-lg h-92 fixed right-64 mr-4 top-32">
               <div className="flex flex-col p-4">
                 <p className="text-gray-700 font-bold">Atur jumlah dan catatan</p>
                 <div className="flex mt-3 items-center">

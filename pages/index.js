@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <Login modal={modal} setModal={toggleModalLogin} />
       <Nav toggleModal={toggleModalLogin} />
-      <main className="px-4 md:px-20 lg:px-76 mt-24">
+      <main className="px-4 md:px-32 lg:px-80 mt-24">
         <div className="my-2">
           <HomeSlider />
         </div>
@@ -50,13 +50,18 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-1/2 ml-6">
-                <p className="text-2xl font-semibold text-gray-800">Top Up & Tagihan</p>
+                <div className="flex justify-between">
+                  <p className="text-2xl font-semibold text-gray-800">Top Up & Tagihan</p>
+                  <Link href="/topup-tagihan">
+                    <a className="text-green-500 font-semibold">Lihat Semua</a>
+                  </Link>
+                </div>
                 <div className="flex flex-col justify-between mt-4 w-full rounded py-2 px-4 bg-gray-100">
                   <div className="flex w-full justify-between border-b h-8">
-                    <div className="text-center text-green-500 font-semibold border-b-2 border-green-500">Pulsa</div>
-                    <div className="text-center text-green-500 font-semibold">Paket Data</div>
-                    <div className="text-center text-green-500 font-semibold">Listrik</div>
-                    <div className="text-center text-green-500 font-semibold">Tiket</div>
+                    <div className="text-center text-green-500 font-semibold border-b-2 border-green-500 tracking-tighter text-sm p-2">Pulsa</div>
+                    <div className="text-center text-gray-500 tracking-tighter font-semibold text-sm p-2">Paket Data</div>
+                    <div className="text-center text-gray-500 tracking-tighter font-semibold text-sm p-2">Listrik</div>
+                    <div className="text-center text-gray-500 tracking-tighter font-semibold text-sm p-2">Tiket</div>
                   </div>
                   <div className="flex justify-between w-full items-end mt-4">
                     <div className="flex flex-col w-5/12">
@@ -86,18 +91,18 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="my-6 flex flex-col">
-          <div className="flex justify-between mb-4">
+        <div className="my-8 flex flex-col">
+          <div className="flex justify-between items-end mb-4">
             <p className="font-bold text-gray-800 text-2xl">Flash Sale</p>
-            <p className="font-semibold text-green-500 text-lg">Lihat Semua</p>
+            <p className="font-semibold text-green-500">Lihat Semua</p>
           </div>
           <div className="bg-gray-200 rounded-lg h-96" />
         </div>
 
         <div className="my-6 flex flex-col">
-          <div className="flex justify-between mb-4">
+          <div className="flex justify-between items-end mb-4">
             <p className="font-bold text-gray-800 text-2xl">Produk Terlaris</p>
-            <p className="font-semibold text-green-500 text-lg">Lihat Semua</p>
+            <p className="font-semibold text-green-500">Lihat Semua</p>
           </div>
           <div className="grid grid-cols-5 gap-4">
             <div className="shadow-md rounded-lg h-80 border">
@@ -155,11 +160,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="my-6 flex flex-col">
-          <div className="flex justify-between mb-4">
+        <div className="my-8 flex flex-col">
+          <div className="flex justify-between items-end mb-4">
             <p className="font-bold text-gray-800 text-2xl">Official Store</p>
             <Link href="/official-store">
-              <a className="font-semibold text-green-500 text-lg">Lihat Semua</a>
+              <a className="font-semibold text-green-500">Lihat Semua</a>
             </Link>
           </div>
           <div className="grid grid-cols-3 gap-4">
@@ -169,10 +174,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="my-6 flex flex-col">
-          <div className="flex justify-between mb-4">
+        <div className="my-8 flex flex-col">
+          <div className="flex justify-between items-end mb-4">
             <p className="font-bold text-gray-800 text-2xl">Cari Kategori</p>
-            <p className="font-semibold text-green-500 text-lg">Lihat Semua</p>
+            <p className="font-semibold text-green-500">Lihat Semua</p>
           </div>
           <div className="grid grid-cols-6 gap-4">
             <Link href="/kategori">
