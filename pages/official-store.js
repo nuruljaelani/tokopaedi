@@ -1,29 +1,19 @@
 /* eslint-disable linebreak-style */
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
+import { useContext } from 'react/cjs/react.development';
 import Footer from '../components/Footer';
 import Login from '../components/Login';
 import Nav from '../components/Nav';
 import OfficialStoreSlider from '../components/OfficialStoreSlider';
-import Kurir from '../components/product/Kurir';
-
+import { LoginContext } from '../context/LoginContext';
 
 const OficialStore = () => {
-  const [modalLogin, setModalLogin] = useState(false);
-  const [modalKurir, setModalKurir] = useState(false);
-
-  const toggleModalLogin = () => {
-    setModalLogin(!modalLogin);
-  };
-
-  const toggleModalKurir = () => {
-    setModalKurir(!modalKurir);
-  };
+  const { modal, toggleModalLogin } = useContext(LoginContext);
   return (
     <div>
-      <Login show={modalLogin} toglleModal={toggleModalLogin} />
-      <Nav showModal={toggleModalLogin} />
-      <Kurir show={modalKurir} toglleModal={toggleModalKurir} />
+      <Login modal={modal} setModal={toggleModalLogin} />
+      <Nav toggleModal={toggleModalLogin} />
       <main className="mt-28 px-4 md:px-36 lg:px-76">
         <div className="my-2">
           <OfficialStoreSlider />

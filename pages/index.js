@@ -1,23 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import { useState } from 'react';
 import Link from 'next/link';
+import { useContext } from 'react';
 import Login from '../components/Login';
 import Nav from '../components/Nav';
 import HomeSlider from '../components/HomeSlider';
 import Footer from '../components/Footer';
+import { LoginContext } from '../context/LoginContext';
 
 export default function Home() {
-  const [show, setShow] = useState(false);
-
-  const toglleModal = () => {
-    setShow(!show);
-  };
+  const { modal, toggleModalLogin } = useContext(LoginContext);
 
   return (
     <div>
-      <Login show={show} toglleModal={toglleModal} />
-      <Nav showModal={toglleModal} />
+      <Login modal={modal} setModal={toggleModalLogin} />
+      <Nav toggleModal={toggleModalLogin} />
       <main className="px-4 md:px-20 lg:px-76 mt-24">
         <div className="my-2">
           <HomeSlider />

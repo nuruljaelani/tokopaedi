@@ -1,4 +1,7 @@
 /* eslint-disable linebreak-style */
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import Image from 'next/image';
+
 const Footer = () => (
   <div>
     <footer className="mt-20 bg-gray-50 w-full px-4 md:px-36 lg:px-76">
@@ -35,17 +38,23 @@ const Footer = () => (
             <p className="text-gray-500 mb-2">Syarat dan Ketentuan</p>
             <p className="text-gray-500 mb-2">Kebujakan Privasi</p>
           </div>
-        </div>
-        <div className="flex flex-col">
-          <p className="font-semibold text-gray-700">Tokopaedi</p>
-          <div className="flex flex-col text-sm mt-4">
-            <p className="text-gray-500 mb-2">Lorem ipsum</p>
-            <p className="text-gray-500 mb-2">Lorem ipsum</p>
-            <p className="text-gray-500 mb-2">Lorem ipsum</p>
-            <p className="text-gray-500 mb-2">Lorem ipsum</p>
-            <p className="text-gray-500 mb-2">Lorem ipsum</p>
-            <p className="text-gray-500 mb-2">Lorem ipsum</p>
+          <p className="font-semibold text-gray-700 mt-4">Ikuti Kami</p>
+          <div className="flex space-x-4 text-sm mt-2">
+            <FaInstagram className="text-xl" />
+            <FaFacebook className="text-xl" />
+            <FaTwitter className="text-xl" />
           </div>
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="flex mb-6">
+            <div className="mr-2">
+              <Image src="/google-play-logo.png" alt="Logo Google play store" width="200" height="60" />
+            </div>
+            <div>
+              <Image src="/iphone-app-store.jpg" alt="Logo App store" width="200" height="60" />
+            </div>
+          </div>
+          <p className="text-gray-500 text-sm">&copy;2020 -2021, PT. Tokopaedi</p>
         </div>
       </div>
     </footer>

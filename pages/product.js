@@ -3,7 +3,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/button-has-type */
 /* eslint-disable linebreak-style */
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import {
   FaStar,
   FaMinusCircle,
@@ -22,18 +22,15 @@ import Footer from '../components/Footer';
 import Login from '../components/Login';
 import Nav from '../components/Nav';
 import Kurir from '../components/product/Kurir';
+import { LoginContext } from '../context/LoginContext';
 
 const Product = () => {
+  const { modal, toggleModalLogin } = useContext(LoginContext);
   const [catatan, setCatatan] = useState(false);
-  const [modalLogin, setModalLogin] = useState(false);
   const [modalKurir, setModalKurir] = useState(false);
 
-  const toggleCatatan = () => {
+  const toggleCatatanInput = () => {
     setCatatan(!catatan);
-  };
-
-  const toggleModalLogin = () => {
-    setModalLogin(!modalLogin);
   };
 
   const toggleModalKurir = () => {
@@ -42,9 +39,9 @@ const Product = () => {
 
   return (
     <div>
-      <Login show={modalLogin} toglleModal={toggleModalLogin} />
-      <Nav showModal={toggleModalLogin} />
-      <Kurir show={modalKurir} toglleModal={toggleModalKurir} />
+      <Login modal={modal} setModal={toggleModalLogin} />
+      <Nav toggleModal={toggleModalLogin} />
+      <Kurir show={modalKurir} toggleModal={toggleModalKurir} />
       <main className="mt-28 px-2 md:px-36 lg:px-76">
         <div className="my-10 flex flex-col">
           <div className="flex">
@@ -242,7 +239,7 @@ const Product = () => {
                 </div>
                 <div className="flex justify-between mt-2 text-sm">
                   <p className="text-gray-600 ml-8">Kurir lainya :</p>
-                  <button type="button" onClick={toggleModalKurir} className="text-green-500 font-semibold">Lihat pilihan kurir</button>
+                  <button type="button" className="text-green-500 font-semibold" onClick={toggleModalKurir}>Lihat pilihan kurir</button>
                 </div>
               </div>
               <hr />
@@ -282,7 +279,7 @@ const Product = () => {
                   <div className={catatan ? 'block mb-2' : 'hidden'}>
                     <input type="text" className="outline-none w-full border border-gray-200 focus:border-green-500 rounded-lg p-2" placeholder="Contoh: warna putih, size M" />
                   </div>
-                  <button className="text-green-400 flex text-sm" onClick={toggleCatatan}>
+                  <button className="text-green-400 flex text-sm" onClick={toggleCatatanInput}>
                     <FaPencilAlt className={catatan ? 'hidden' : 'block'} />
                     <p className="ml-2 font-bold">{catatan ? 'Batalkan Catatan' : 'Tambahkan catatan'}</p>
                   </button>
