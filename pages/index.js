@@ -1,6 +1,8 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import Link from 'next/link';
+import Head from 'next/head';
 import { useContext } from 'react';
 import Login from '../components/Login';
 import Nav from '../components/Nav';
@@ -13,6 +15,9 @@ export default function Home() {
 
   return (
     <div>
+      <Head>
+        <title>Home</title>
+      </Head>
       <Login modal={modal} setModal={toggleModalLogin} />
       <Nav toggleModal={toggleModalLogin} />
       <main className="px-4 md:px-32 lg:px-80 mt-24">

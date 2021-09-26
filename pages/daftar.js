@@ -1,10 +1,15 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable linebreak-style */
 import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
+import Head from 'next/head';
 import { FaFacebook, FaGoogle } from 'react-icons/fa';
 
 const Daftar = () => (
   <div>
+    <Head>
+      <title>Daftar</title>
+    </Head>
     <Link href="/">
       <p className="text-center text-green-500 font-semibold text-4xl my-6">tokopaedi</p>
     </Link>
@@ -38,11 +43,11 @@ const Daftar = () => (
           <p className="text-xs text-gray-400">atau daftar dengan</p>
           <form className="w-full px-10 my-6">
             <div className="flex flex-col">
-              <label className="text-sm text-gray-500">Nomor Hp / Email</label>
-              <input type="text" className="bg-white w-full outline-none border border-gray-300 focus:border-green-500 rounded-lg py-2 px-3" />
+              <label htmlFor="no_hp" className="text-sm text-gray-500">Nomor Hp / Email</label>
+              <input type="text" name="no_hp" className="bg-white w-full outline-none border border-gray-300 focus:border-green-500 rounded-lg py-2 px-3" />
             </div>
             <p className="text-xs text-gray-400">Contoh : Email@tokopaedi.com</p>
-            <button className="bg-gray-200 w-full mt-4 hover:bg-gray-300 rounded-md font-bold text-gray-400 hover:text-gray-500 py-2">Daftar</button>
+            <button type="button" className="bg-gray-200 w-full mt-4 hover:bg-gray-300 rounded-md font-bold text-gray-400 hover:text-gray-500 py-2">Daftar</button>
           </form>
           <div className="text-xs text-center">
             <p className="text-gray-400">Dengan mendaftar, saya menyetujui</p>

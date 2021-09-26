@@ -4,6 +4,7 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable linebreak-style */
 import React, { useContext, useState } from 'react';
+import Head from 'next/head';
 import {
   FaStar,
   FaMinusCircle,
@@ -39,12 +40,15 @@ const Product = () => {
 
   return (
     <div>
+      <Head>
+        <title>Produk</title>
+      </Head>
       <Login modal={modal} setModal={toggleModalLogin} />
       <Nav toggleModal={toggleModalLogin} />
       <Kurir show={modalKurir} toggleModal={toggleModalKurir} />
       <main className="mt-28 px-2 md:px-32 lg:px-80">
         <div className="my-10 flex flex-col">
-          <div className="flex">
+          <div className="flex space-x-10">
             <div className="flex flex-col w-4/12">
               <div className="flex flex-col">
                 <div className="shadow-md border h-80 rounded-lg overflow-hidden px-4 items-center flex">
@@ -151,7 +155,7 @@ const Product = () => {
               </div>
             </div>
 
-            <div className="flex flex-col ml-6 w-5/12">
+            <div className="flex flex-col w-5/12">
               <p className="text-xl font-bold text-gray-800">Kamera Mirorless M50 murah 2 Ribuan</p>
               <div className="flex items-center">
                 <p className="text-gray-600 mr-4">Terjual 235</p>
@@ -263,7 +267,7 @@ const Product = () => {
             </div>
 
             {/* Right Content */}
-            <div className="bg-white shadow border ml-6 w-2/12 rounded-lg h-92 fixed right-64 mr-4 top-32">
+            <div className="bg-white shadow border w-3/12 rounded-lg h-full">
               <div className="flex flex-col p-4">
                 <p className="text-gray-700 font-bold">Atur jumlah dan catatan</p>
                 <div className="flex mt-3 items-center">
