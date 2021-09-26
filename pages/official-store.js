@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
 import Link from 'next/link';
-import { useContext } from 'react/cjs/react.development';
+import * as react from 'react';
 import Footer from '../components/Footer';
 import Login from '../components/Login';
 import Nav from '../components/Nav';
@@ -9,7 +9,7 @@ import OfficialStoreSlider from '../components/OfficialStoreSlider';
 import { LoginContext } from '../context/LoginContext';
 
 const OficialStore = () => {
-  const { modal, toggleModalLogin } = useContext(LoginContext);
+  const { modal, toggleModalLogin } = react.useContext(LoginContext);
   return (
     <div>
       <Login modal={modal} setModal={toggleModalLogin} />
