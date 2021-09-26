@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
-import { useContext } from 'react/cjs/react.development';
+import * as react from 'react';
 import Footer from '../components/Footer';
 import Login from '../components/Login';
 import Nav from '../components/Nav';
@@ -8,7 +8,7 @@ import TopupBanner from '../components/TopupBanner';
 import { LoginContext } from '../context/LoginContext';
 
 const TopupTagihan = () => {
-  const { modal, toggleModalLogin } = useContext(LoginContext);
+  const { modal, toggleModalLogin } = react.useContext(LoginContext);
 
   return (
     <div>
