@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable arrow-body-style */
 /* eslint-disable linebreak-style */
 /* eslint-disable react/prop-types */
@@ -6,7 +7,6 @@ import { FaSearch, FaShoppingCart } from 'react-icons/fa';
 import Link from 'next/link';
 
 const Nav = ({ toggleModal }) => {
-
   return (
     <div>
       <div className="bg-green-500 fixed top-0 w-full z-30">
