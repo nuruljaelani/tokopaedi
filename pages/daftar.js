@@ -14,7 +14,7 @@ const Daftar = () => (
     <Link href="/">
       <p className="text-center text-green-500 font-semibold text-4xl my-6">tokopaedi</p>
     </Link>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:gap-32 container mx-auto px-4 sm:px-10 md:px-20 lg:px-32 xl:px-48 2xl:px-72 my-24">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:gap-32 container mx-auto px-4 sm:px-10 md:px-16 max-w-screen-xl my-24">
       <div className="flex flex-col">
         <div className="px-10">
           <img src="/register_new.png" alt="register" className="h-full" />

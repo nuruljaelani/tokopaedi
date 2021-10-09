@@ -18,7 +18,7 @@ const Elektronik = () => {
       </Head>
       <Login modal={modal} setModal={toggleModalLogin} />
       <Nav toggleModal={toggleModalLogin} />
-      <main className="px-4 sm:px-10 md:px-20 lg:px-32 xl:px-48 2xl:px-72 mt-24">
+      <main className="px-4 sm:px-10 md:px-16 mx-auto max-w-screen-2xl mt-24">
         <div className="my-2">
           <KategoriBanner />
         </div>

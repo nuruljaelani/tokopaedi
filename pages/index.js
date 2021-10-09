@@ -20,11 +20,11 @@ export default function Home() {
       </Head>
       <Login modal={modal} setModal={toggleModalLogin} />
       <Nav toggleModal={toggleModalLogin} />
-      <main className="px-4 sm:px-10 md:px-20 lg:px-32 xl:px-48 2xl:px-72 mt-24">
+      <main className="px-4 sm:px-10 md:px-16 mx-auto max-w-screen-2xl mt-24">
         <div className="my-2">
           <HomeSlider />
         </div>
-        <div className="my-6 flex flex-col">
+        <div className="my-6 hidden md:flex flex-col">
           <div className="bg-white flex flex-col w-full border rounded-lg shadow-lg p-4">
             <div className="flex">
               <div className="w-1/2 flex flex-col">

@@ -14,7 +14,7 @@ const TopupTagihan = () => {
     <div>
       <Login modal={modal} setModal={toggleModalLogin} />
       <Nav toggleModal={toggleModalLogin} />
-      <main className="px-4 md:px-32 lg:px-80 mt-28">
+      <main className="px-4 sm:px-10 md:px-16 mx-auto max-w-screen-2xl mt-28">
         <TopupBanner />
 
         <div className="flex flex-col mt-16">

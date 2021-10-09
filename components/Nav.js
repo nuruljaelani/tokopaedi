@@ -11,19 +11,19 @@ const Nav = ({ toggleModal }) => {
     <div>
       <div className="bg-green-500 fixed top-0 w-full z-30">
         <nav className="w-full flex items-center mx-auto px-4 sm:px-10 md:px-14 py-6">
-          <div className="flex space-x-2 w-1/4 md:w-1/5 items-center justify-between pr-6">
+          <div className="flex space-x-2 w-1/4 lg:w-1/5 items-center justify-between pr-6">
             <Link href="/">
               <a className="text-white font-bold text-xl md:text-2xl lg:text-3xl">Tokopaedi</a>
             </Link>
-            <p className="text-xs md:text-base font-semibold text-white">Kategori</p>
+            <p className="hidden md:inline text-xs md:text-base font-semibold text-white">Kategori</p>
           </div>
-          <div className="flex w-3/4 md:w-3/5">
+          <div className="flex w-3/4 md:w-2/4 lg:w-3/5">
             <input type="text" className="bg-white rounded-l-xl h-10 px-4 py-3 outline-none w-full" placeholder="Cari produk disini ..." />
             <button type="button" className="bg-white rounded-r-xl p-3">
               <FaSearch />
             </button>
           </div>
-          <div className="hidden md:flex space-x-0 md:space-x-2 md:w-1/5 justify-end">
+          <div className="hidden md:flex space-x-0 md:space-x-2 w-1/4 lg:w-1/5 justify-end">
             <button type="button">
               <FaShoppingCart className="text-3xl text-green-200" />
             </button>
