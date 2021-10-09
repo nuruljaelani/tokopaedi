@@ -14,7 +14,7 @@ const Daftar = () => (
     <Link href="/">
       <p className="text-center text-green-500 font-semibold text-4xl my-6">tokopaedi</p>
     </Link>
-    <div className="grid grid-cols-2 gap-32 container mx-auto px-4 md:px-52 lg:px-60 my-24">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:gap-32 container mx-auto px-4 sm:px-10 md:px-20 lg:px-32 xl:px-48 2xl:px-72 my-24">
       <div className="flex flex-col">
         <div className="px-10">
           <img src="/register_new.png" alt="register" className="h-full" />
@@ -31,18 +31,18 @@ const Daftar = () => (
             <p className="text-gray-400">Sudah Punya Akun Tokopaedi ?</p>
             <p className="text-green-500"> &nbsp;Masuk</p>
           </div>
-          <div className="flex my-4">
-            <button type="button" className="border flex items-center rounded-md py-2 px-10">
+          <div className="flex my-4 space-x-2">
+            <button type="button" className="border flex space-x-2 items-center rounded-md py-2 px-4">
               <FaFacebook />
               <p className="font-semibold ml-4">Facebook</p>
             </button>
-            <button type="button" className="border flex items-center rounded-md py-2 px-10 ml-4">
+            <button type="button" className="border flex space-x-2 items-center rounded-md py-2 px-4">
               <FaGoogle />
               <p className="font-semibold ml-4">Google</p>
             </button>
           </div>
           <p className="text-xs text-gray-400">atau daftar dengan</p>
-          <form className="w-full px-10 my-6">
+          <form className="w-full px-4 md:px-6 lg:px-10 my-6">
             <div className="flex flex-col">
               <label htmlFor="no_hp" className="text-sm text-gray-500">Nomor Hp / Email</label>
               <input type="text" name="no_hp" className="bg-white w-full outline-none border border-gray-300 focus:border-green-500 rounded-lg py-2 px-3" />

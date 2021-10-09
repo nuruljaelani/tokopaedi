@@ -18,11 +18,11 @@ const Elektronik = () => {
       </Head>
       <Login modal={modal} setModal={toggleModalLogin} />
       <Nav toggleModal={toggleModalLogin} />
-      <main className="px-20 mt-24">
-        <div className="px-4 md:px-36 lg:px-72 my-2">
+      <main className="px-4 sm:px-10 md:px-20 lg:px-32 xl:px-48 2xl:px-72 mt-24">
+        <div className="my-2">
           <KategoriBanner />
         </div>
-        <div className="my-10 flex flex-col px-2 md:px-36 lg:px-72">
+        <div className="my-10 flex flex-col">
           <div className="grid grid-cols-7 gap-4">
             <Link href="/kategori">
               <div className="rounded-lg border shadow-md h-40 flex flex-col justify-center items-center">
@@ -57,7 +57,7 @@ const Elektronik = () => {
           </div>
         </div>
 
-        <div className="my-6 flex flex-col px-2 md:px-36 lg:px-72">
+        <div className="my-6 flex flex-col">
           <div className="flex items-end justify-start mb-4">
             <p className="font-bold text-gray-600 text-xl">Produk Terlaris</p>
             <p className="text-gray-500 text-sm ml-4">Elektronik yang lagi hits</p>
@@ -168,7 +168,7 @@ const Elektronik = () => {
           </div>
         </div>
 
-        <div className="my-10 flex flex-col px-2 md:px-36 lg:px-72">
+        <div className="my-10 flex flex-col">
           <p className="text-gray-700 text-xl font-bold">Brands</p>
           <div className="grid grid-cols-6 gap-2 my-4">
             <Link href="/kategori">
