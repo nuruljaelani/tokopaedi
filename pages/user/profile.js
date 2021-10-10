@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <Login modal={modal} setModal={toggleModalLogin} />
       <Nav toggleModal={toggleModalLogin} />
-      <main className="px-4 sm:px-10 md:px-16 mx-auto max-w-screen-2xl mt-24">
+      <main className="px-4 sm:px-10 md:px-16 mx-auto max-w-screen-2xl mt-24" style={{ minHeight: '60vh' }}>
         <div className="flex space-x-4 lg:space-x-10">
           <div className="w-full md:w-1/4 my-4 lg:my-6">
             <div className="bg-white rounded shadow flex flex-col pb-2">
