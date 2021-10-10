@@ -13,7 +13,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <LoginContextProvider>
       <Component {...pageProps} />
-      ;
     </LoginContextProvider>
   );
 }
