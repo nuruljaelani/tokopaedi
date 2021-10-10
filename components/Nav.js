@@ -24,9 +24,11 @@ const Nav = ({ toggleModal }) => {
             </button>
           </div>
           <div className="hidden md:flex space-x-0 md:space-x-2 w-1/4 lg:w-1/5 justify-end">
-            <button type="button">
-              <FaShoppingCart className="text-3xl text-green-200" />
-            </button>
+            <Link href="/keranjang">
+              <button type="button">
+                <FaShoppingCart className="text-3xl text-green-200" />
+              </button>
+            </Link>
             <button type="button" className="text-white border border-white rounded-lg hover:bg-green-300 hover:border-green-500 font-semibold py-2 px-2 lg:px-4 text-sm" onClick={toggleModal}>Login</button>
             <Link href="/daftar">
               <button type="button" className="bg-green-300 border hover:bg-green-500 text-white font-semibold rounded-lg py-2 px-2 lg:px-4 text-sm">

@@ -1,0 +1,64 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+import React, { useContext } from 'react';
+import Head from 'next/head';
+import Login from '../../components/Login';
+import { LoginContext } from '../../context/LoginContext';
+import Nav from '../../components/Nav';
+import Footer from '../../components/Footer';
+
+export default function index() {
+  const { modal, toggleModalLogin } = useContext(LoginContext);
+
+  return (
+    <div>
+      <Head>
+        <title>Keranjang</title>
+      </Head>
+      <Login modal={modal} setModal={toggleModalLogin} />
+      <Nav toggleModal={toggleModalLogin} />
+      <main className="px-4 sm:px-10 md:px-16 mx-auto max-w-screen-2xl mt-24" style={{ minHeight: '60vh' }}>
+        <div className="flex">
+          <div className="w-3/4 my-8 flex flex-col space-y-4">
+            <p className="text-gray-700 font-semibold text-base md:text-lg lg:text-xl">Keranjang</p>
+            <div className="flex flex-col space-y-4 md:space-y-6">
+              <div className="flex items-center space-x-2">
+                <input type="checkbox" />
+                <label className="text-gray-600">Pilih Semua</label>
+              </div>
+              <hr />
+              <div className="flex flex-col">
+                <div className="flex space-x-4">
+                  <input type="checkbox" />
+                  <div className="flex flex-col space-y-2">
+                    <div className="flex flex-col">
+                      <p className="font-medium text-xs">Abc official</p>
+                      <p className="text-xs text-gray-500">Jakarta Selatan</p>
+                    </div>
+                    <div className="flex flex-col">
+                      <div className="flex space-x-2">
+                        <img src="/product/123.png" alt="Product" className="w-24" />
+                        <div className="flex flex-col space-y-1">
+                          <p className="text-sm text-gray-600 font-medium">Kamera Mirrorless cannon</p>
+                          <p className="text-sm text-gray-500">Hitam</p>
+                          <p className="text-sm text-gray-700 font-medium">Rp 7.999.9000</p>
+                        </div>
+                      </div>
+                      <div className="flex">
+                        <div className="flex">
+                          <button type="button" className="border rounded-full border-gray-600 my-auto flex items-center">
+                            <i className="material-icons">add</i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+}
